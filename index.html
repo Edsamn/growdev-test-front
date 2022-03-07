@@ -7,9 +7,26 @@
     <title>Aula 16/02</title>
 </head>
 <body>
-    <ul id="lista">
-        
-    </ul>
+    <ul id="users"></ul>
+    <button onclick="createUser(event,1)">user #1</button>
+    <button onclick="createUser(event,2)">user #2</button>
+    <hr>
+    <button onclick="updateUser(event,1)">Update user #1</button>
+    <button onclick="updateUser(event,2)">Update user #2</button>
+    <form>
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="age">Idade</label>
+            <input type="number" id="age">
+        </div>
+        <div>
+            <input type="hidden" id="user-id">
+            <input type="submit" value="Salvar" onclick="saveUser(event)">
+        </div>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
