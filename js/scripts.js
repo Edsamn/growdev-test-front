@@ -1,5 +1,5 @@
 const lista = document.getElementById('lista');
-axios.get(/* rota */)
+axios.get(8080)
     .then(response => {
         response.data.forEach(user => {
             lista.innerHTML += `
